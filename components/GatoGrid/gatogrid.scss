@@ -1,7 +1,7 @@
 .GatoGrid{
     background-color: $font-secondary;
     text-align: center;
-    max-width: 20%;
+    width: 100%;
 
     @media(max-width:768px){
         max-width: 40%;

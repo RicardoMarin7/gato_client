@@ -46,9 +46,12 @@ const CombinationTree = ({firstMove}) => {
     console.log(grids)
 
     return (
-        <div className="Tree">
+        <div className="Tree" >
             {map( grids, (grid, row) =>(
-                <GatoGrid gridToRepresent={grid} key={`grid-${row}`}/> 
+                <div className='board' key={`grid-${row}`}>
+                    <h2>{`Tablero ${row}`}</h2>
+                    <GatoGrid gridToRepresent={grid} /> 
+                </div>
             ))}
         </div>
     );
