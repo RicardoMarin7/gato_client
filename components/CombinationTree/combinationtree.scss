@@ -1,0 +1,15 @@
+.Tree{
+    flex: 1;
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    border-top: 1px solid $font;
+    gap: 12px;
+    overflow: auto;
+
+    h1{
+        color: $font-secondary;
+        margin-top: 1.8rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,24 @@
+@import './colors.scss';
+
+//Components
+    //Header
+    @import '../components/Header/header.scss';
+
+    //GatoGrid
+    @import '../components/GatoGrid/gatogrid.scss';
+
+    //GatoGrid
+    @import '../components/InitialGrid/initialgrid.scss';
+
+    //CombinationTree
+    @import '../components/CombinationTree/combinationtree.scss';
+
+    // //SearchBar
+    // @import '../components/ChartFinder/SearchBar/searchbar.scss';
+
+    // //ChartList
+    // @import '../components/ChartFinder/ChartList/chartlist.scss';
+
+    // @import '../components/ChartFinder/Chart/chart.scss';
+//Pages
+    @import '../pages/index.scss';

@@ -1,0 +1,47 @@
+.Header{
+    display: grid;
+    place-items: center;
+
+    &__logo{
+        color: $font;
+        font-size: 5rem;
+
+        span{
+            color:$font-secondary;
+            border: 1px solid $font-secondary;
+            padding: .6rem;
+            margin-left: .5rem;
+        }
+
+        &_min{
+            font-size: 2rem;
+            color:$font;
+            span{
+                color:$font-secondary!important;
+                border: 1px solid $font-secondary;
+                padding: .3em;
+                margin-left: .15em;
+            }
+        }
+    }
+
+    p{
+        font-size: 2rem;
+        color: $font-secondary;
+
+        span{
+            color: $font;
+        }
+    }
+
+    
+    @media(max-width:468px){
+        p{
+            font-size: 1.8rem;
+            text-align: center;
+
+            
+        }
+    }
+
+}
