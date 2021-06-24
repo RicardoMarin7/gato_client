@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <BasicLayout>
-      {firstMove ?  <CombinationTree firstMove={firstMove} /> : <InitialGrid setFirstMove={setFirstMove} />}
+      {firstMove ?  <CombinationTree firstMove={firstMove} setFirstMove={setFirstMove} /> : <InitialGrid setFirstMove={setFirstMove} />}
     </BasicLayout>
   )
 }

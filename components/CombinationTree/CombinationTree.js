@@ -1,8 +1,9 @@
 import { cloneDeep, map } from 'lodash';
 import React from 'react';
 import GatoGrid from '../GatoGrid'
+import { Button, Icon } from 'semantic-ui-react'
 
-const CombinationTree = ({firstMove}) => {
+const CombinationTree = ({firstMove,setFirstMove}) => {
     const initialGrid = [
         ['','',''],
         ['','',''],
@@ -47,12 +48,19 @@ const CombinationTree = ({firstMove}) => {
 
     return (
         <div className="Tree" >
-            {map( grids, (grid, row) =>(
-                <div className='board' key={`grid-${row}`}>
-                    <h2>{`Tablero ${row}`}</h2>
-                    <GatoGrid gridToRepresent={grid} /> 
-                </div>
-            ))}
+            <div className="boards">
+                {map( grids, (grid, row) =>(
+                    <div className='board' key={`grid-${row}`}>
+                        <h2>{`Tablero ${row}`}</h2>
+                        <GatoGrid gridToRepresent={grid} /> 
+                    </div>
+                ))}
+            </div>
+
+            <Button animated='fade' onClick={() => setFirstMove(null)}>
+                <Button.Content visible>Nuevo movimiento</Button.Content>
+                <Button.Content hidden><Icon name='repeat' /></Button.Content>
+            </Button>
         </div>
     );
 }
